@@ -12,3 +12,24 @@ graphql:
     context-setting: PER_REQUEST_WITH_INSTRUMENTATION
     # Sets if asynchronous operations are supported for GraphQL requests. If not specified defaults to true.
     async-mode-enabled: true
+
+# datasource sample
+spring:
+  datasource:
+    sample:
+      driverClassName: org.postgresql.Driver
+      sqlScriptEncoding: UTF-8
+      # pooling
+      maxActive: 15
+      maxIdle: 10
+      minIdle: 5
+      initialSize: 2
+      # Re-connect
+      validationQuery: SELECT 1 FROM DUAL
+      testOnBorrow: true
+      testWhileIdle: true
+      timeBetweenEvictionRunsMillis: 600000
+      minEvictableIdleTimeMillis: 600000
+      url: jdbc:postgresql://localhost:5432/sample
+      username: postgres
+      password: 3739
