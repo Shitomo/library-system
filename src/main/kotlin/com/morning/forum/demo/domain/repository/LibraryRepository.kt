@@ -1,4 +1,4 @@
-package com.morning.forum.demo.infrastructure.repository
+package com.morning.forum.demo.domain.repository
 import com.morning.forum.demo.domain.Book
 import com.morning.forum.demo.domain.Library
 

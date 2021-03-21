@@ -1,7 +1,5 @@
 package com.morning.forum.demo.domain
 
-import com.morning.forum.demo.infrastructure.repository.BookRepository
-
 
 /**
  * 本

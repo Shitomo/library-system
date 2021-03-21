@@ -1,7 +1,7 @@
 package com.morning.forum.demo.web.controller
 
 import com.morning.forum.demo.exception.ValidationException
-import com.morning.forum.demo.infrastructure.repository.LibraryRepository
+import com.morning.forum.demo.domain.repository.LibraryRepository
 import com.morning.forum.demo.web.dto.RegisterBookRequestDto
 import com.morning.forum.demo.web.dto.RegisterBookResponseDto
 import org.springframework.beans.factory.annotation.Autowired

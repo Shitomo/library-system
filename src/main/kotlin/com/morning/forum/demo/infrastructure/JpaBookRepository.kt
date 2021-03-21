@@ -4,7 +4,7 @@ import com.morning.forum.demo.exception.BadRequestException
 import org.springframework.jdbc.core.JdbcTemplate
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Repository
-import com.morning.forum.demo.infrastructure.repository.BookRepository
+import com.morning.forum.demo.domain.repository.BookRepository
 import com.morning.forum.demo.domain.Book
 import org.springframework.dao.DuplicateKeyException
 
