@@ -3,7 +3,10 @@ package com.morning.forum.demo.config
 import org.springframework.boot.context.properties.ConfigurationProperties
 import org.springframework.stereotype.Component
 
-
+/**
+ * データベースの設定を読み込むためのクラス．
+ *　設定自体はapplication.yamlに記述されている
+ */
 @Component
 @ConfigurationProperties(prefix="spring.datasource.sample")
 class DatasourceSampleProperties {

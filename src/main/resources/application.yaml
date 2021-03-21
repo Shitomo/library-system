@@ -13,7 +13,7 @@ graphql:
     # Sets if asynchronous operations are supported for GraphQL requests. If not specified defaults to true.
     async-mode-enabled: true
 
-# datasource sample
+# データベース設定．環境に合わせて変えてください
 spring:
   datasource:
     sample:
@@ -30,6 +30,6 @@ spring:
       testWhileIdle: true
       timeBetweenEvictionRunsMillis: 600000
       minEvictableIdleTimeMillis: 600000
-      url: jdbc:postgresql://localhost:5432/sample
-      username: postgres
-      password: 3739
+      url: jdbc:postgresql://localhost:5432/library
+      username: test_user
+      password: test

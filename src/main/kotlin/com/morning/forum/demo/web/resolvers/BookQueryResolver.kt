@@ -3,20 +3,19 @@ package com.morning.forum.demo.web.resolvers
 
 import com.coxautodev.graphql.tools.GraphQLQueryResolver
 
-import com.morning.forum.demo.model.Book
-import com.morning.forum.demo.web.service.BookManageService
+import com.morning.forum.demo.domain.Library
+import com.morning.forum.demo.infrastructure.repository.LibraryRepository
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Component
 
 
 @Component
-class BookQueryResolver : GraphQLQueryResolver {
+class LibraryQueryResolver : GraphQLQueryResolver {
     @Autowired
-    lateinit var bookManageService : BookManageService
+    lateinit var libraryRepository : LibraryRepository
 
-    fun search(bookId: Int): Book {
-        val book = bookManageService.searchById(bookId)
-        return book
+    fun search(title: String): List<Library> {
+        return libraryRepository.findByTitle(title)
     }
 
 }
